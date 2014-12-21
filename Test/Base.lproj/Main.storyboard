@@ -38,13 +38,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="boxLabel" destination="sBk-9k-F4a" id="VdE-O8-3uz"/>
-                        <outlet property="statusLabel" destination="SsO-Dx-0Fm" id="dxd-gs-f7v"/>
-                        <outlet property="test" destination="LMC-P0-s8G" id="8Lf-vN-EXV"/>
+                        <outlet property="boxLabel" destination="sBk-9k-F4a" id="5Cd-fM-42i"/>
+                        <outlet property="statusLabel" destination="SsO-Dx-0Fm" id="cdt-bZ-c1E"/>
+                        <outlet property="test" destination="LMC-P0-s8G" id="Xmt-3R-Wp2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="292" y="71"/>
         </scene>
     </scenes>
 </document>

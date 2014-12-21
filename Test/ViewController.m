@@ -85,6 +85,15 @@
         NSLog(@"Liczba reverse fast en to: %@", liczba);
     }
     
+    //dodawanie do tablicy
+    NSMutableArray *zwierzaki = [NSMutableArray arrayWithObjects:@"Pies",@"Królik",@"Kaczka",@"Krowa",nil];
+    [zwierzaki insertObject:@"Kot" atIndex:0];
+    [zwierzaki replaceObjectAtIndex:1 withObject:@"Piesek"];
+    //[zwierzaki removeObject:@"Krowa"];
+    [zwierzaki removeObjectAtIndex:4];
+    enumerator = [zwierzaki objectEnumerator];
+    for (NSString *liczba in enumerator)
+        NSLog(@"Zwierzak to: %@", liczba);
     
     
     
