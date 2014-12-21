@@ -95,6 +95,19 @@
     for (NSString *liczba in enumerator)
         NSLog(@"Zwierzak to: %@", liczba);
     
+    //Słowniki
+    
+    NSDictionary *myDetails = [NSDictionary dictionary];
+    myDetails = [NSDictionary dictionaryWithObjectsAndKeys:@"Piotrek", @"Imie", @"Mlynarski", @"Nazwisko", nil];
+    NSLog(@"Nazwisko to: %@ ", [myDetails objectForKey:@"Nazwisko"]);
+    
+    NSEnumerator *enumerator3 = [myDetails keyEnumerator];
+    id key;
+    while (key = [enumerator3 nextObject]) {
+        NSLog(@"Kluczem pary jest: %@", key);
+    }
+    
+    
     
     
     
