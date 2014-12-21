@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController {
+    
+    IBOutlet UILabel *statusLabel;
+    IBOutlet UILabel *boxLabel;
+    IBOutlet UILabel *test;
+    
+}
 
 @end
 
