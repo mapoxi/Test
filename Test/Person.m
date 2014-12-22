@@ -11,6 +11,8 @@
 
 @implementation Person
 
+
+//czy zamiast poniższego mogę zastosować @synthesize ...
 - (id)init {
     if ((self = [super init])) {
         name = @"Person";
