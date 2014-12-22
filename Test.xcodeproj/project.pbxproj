@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2411937D1A472BB70004401A /* CityMapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2411937C1A472BB70004401A /* CityMapping.plist */; };
 		242827821A3F07B3002E9B13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 242827811A3F07B3002E9B13 /* main.m */; };
 		242827851A3F07B3002E9B13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 242827841A3F07B3002E9B13 /* AppDelegate.m */; };
 		242827881A3F07B3002E9B13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242827871A3F07B3002E9B13 /* ViewController.m */; };
@@ -14,6 +15,9 @@
 		2428278D1A3F07B3002E9B13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2428278C1A3F07B3002E9B13 /* Images.xcassets */; };
 		242827901A3F07B3002E9B13 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2428278E1A3F07B3002E9B13 /* LaunchScreen.xib */; };
 		2428279C1A3F07B3002E9B13 /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2428279B1A3F07B3002E9B13 /* TestTests.m */; };
+		24FACF8D1A48D2050032EF5C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FACF881A48D2050032EF5C /* Person.m */; };
+		24FACF8E1A48D2050032EF5C /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FACF8A1A48D2050032EF5C /* Student.m */; };
+		24FACF8F1A48D2050032EF5C /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FACF8C1A48D2050032EF5C /* Teacher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2411937C1A472BB70004401A /* CityMapping.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityMapping.plist; sourceTree = "<group>"; };
 		2428277C1A3F07B3002E9B13 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		242827801A3F07B3002E9B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		242827811A3F07B3002E9B13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,12 @@
 		242827951A3F07B3002E9B13 /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2428279A1A3F07B3002E9B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2428279B1A3F07B3002E9B13 /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
+		24FACF871A48D2050032EF5C /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		24FACF881A48D2050032EF5C /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		24FACF891A48D2050032EF5C /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		24FACF8A1A48D2050032EF5C /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		24FACF8B1A48D2050032EF5C /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		24FACF8C1A48D2050032EF5C /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +96,13 @@
 				242827841A3F07B3002E9B13 /* AppDelegate.m */,
 				242827861A3F07B3002E9B13 /* ViewController.h */,
 				242827871A3F07B3002E9B13 /* ViewController.m */,
+				24FACF871A48D2050032EF5C /* Person.h */,
+				24FACF881A48D2050032EF5C /* Person.m */,
+				24FACF891A48D2050032EF5C /* Student.h */,
+				24FACF8A1A48D2050032EF5C /* Student.m */,
+				24FACF8B1A48D2050032EF5C /* Teacher.h */,
+				24FACF8C1A48D2050032EF5C /* Teacher.m */,
+				2411937C1A472BB70004401A /* CityMapping.plist */,
 				242827891A3F07B3002E9B13 /* Main.storyboard */,
 				2428278C1A3F07B3002E9B13 /* Images.xcassets */,
 				2428278E1A3F07B3002E9B13 /* LaunchScreen.xib */,
@@ -199,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2411937D1A472BB70004401A /* CityMapping.plist in Resources */,
 				2428278B1A3F07B3002E9B13 /* Main.storyboard in Resources */,
 				242827901A3F07B3002E9B13 /* LaunchScreen.xib in Resources */,
 				2428278D1A3F07B3002E9B13 /* Images.xcassets in Resources */,
@@ -219,8 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24FACF8F1A48D2050032EF5C /* Teacher.m in Sources */,
 				242827881A3F07B3002E9B13 /* ViewController.m in Sources */,
 				242827851A3F07B3002E9B13 /* AppDelegate.m in Sources */,
+				24FACF8E1A48D2050032EF5C /* Student.m in Sources */,
+				24FACF8D1A48D2050032EF5C /* Person.m in Sources */,
 				242827821A3F07B3002E9B13 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
