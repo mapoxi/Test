@@ -13,6 +13,7 @@
     IBOutlet UILabel *statusLabel;
     IBOutlet UILabel *boxLabel;
     IBOutlet UILabel *test;
+  
     
 }
 
