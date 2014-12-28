@@ -10,84 +10,70 @@
 
 @implementation Student
 
-- (id)initWithName:(NSString *)_name
-               age:(NSNumber *)_age
-            gender:(Gender)_gender
-           classes:(NSArray *)_classes
-   numberOfCredits:(NSNumber *)_numberOfCredits
-             major:(NSString *)_major
+- (id)initWithName:(NSString *)name
+               age:(NSNumber *)age
+            gender:(Gender)gender
+           classes:(NSArray *)classes
+   numberOfCredits:(NSNumber *)numberOfCredits
+             major:(NSString *)major
 {
     if ((self = [super init])) {
-        name = _name;
-        age = _age;
-        gender = _gender;
-        classes = _classes;
-        numberOfCredits = _numberOfCredits;
-        major = _major;
+        self.name = name;
+        self.age = age;
+        self.gender = gender;
+        _classes = classes;
+        _numberOfCredits = numberOfCredits;
+        _major = major;
     }
     return self;
 }
 
 - (NSString *)name
 {
-    if(name) {
-        return name;
+    if(self.name) {
+        return self.name;
     }
     return @"--nieznane--";
 }
 
 - (NSNumber *)age
 {
-    if(age) {
-        return age;
+    if(self.age) {
+        return self.age;
     }
     return [NSNumber numberWithInt:-1];
 }
 
 - (Gender)gender
 {
-    if(gender){
-        return gender;
+    if(self.gender){
+        return self.gender;
     }
     return -1;
 }
 
-- (void)setName:(NSString *)_name
-{
-    name = _name;
-}
 
-- (void)setAge:(NSNumber *)_age
+-(NSString *)description3
 {
-    age = _age;
-}
-
-- (void)setGender:(Gender)_gender
-{
-    gender = _gender;
-}
-
--(NSString *)description
-{
-    if (gender == Male){
-        return [NSString stringWithFormat:@"Cześć, jestem mężczyzną, mam na imię %@, a mój wiek to %@ lat", name, age];
+    if (self.gender == Male){
+        return [NSString stringWithFormat:@"Cześć, jestem mężczyzną, mam na imię %@, a mój wiek to %@ lat", self.name, self.age];
     } else {
-        return [NSString stringWithFormat:@"Cześć, jestem kobietą, mam na imię %@ a mój wiek to %@", name, age];
+        return [NSString stringWithFormat:@"Cześć, jestem kobietą, mam na imię %@ a mój wiek to %@", self.name, self.age];
     }
 }
 
 -(NSString *)description2
 {
-    if(gender == Male) {
+    if(self.gender == Male) {
         return [NSString stringWithFormat:
                 @"%@. Jestem mężczyzną, aktualnie studiuję %@, "
                 "mam %@ przedmiotów na kierunku %@",
-                [super description], classes, numberOfCredits, major];
+                [super description], _classes, _numberOfCredits, _major];
     } else {
         return [NSString stringWithFormat:
                 @"%@. Jestem kobietą, aktualnie studiuję %@ "
                 "mam %@ przedmiotów na kierunku %@",
-                [super description], classes, numberOfCredits, major];
+                [super description], _classes, _numberOfCredits, _major];
     }
 }
 

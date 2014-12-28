@@ -10,30 +10,30 @@
 
 @implementation Teacher
 
-- (id)initWithName:(NSString *)_name
-               age:(NSNumber *)_age
-            gender:(Gender)_gender
-           classes:(NSArray *)_classes
-            salary:(NSNumber *)_salary
-   areaOfExpertise:(NSString *)_areaOfExpertise
+- (id)initWithName:(NSString *)name
+               age:(NSNumber *)age
+            gender:(Gender)gender
+           classes:(NSArray *)classes
+            salary:(NSNumber *)salary
+   areaOfExpertise:(NSString *)areaOfExpertise
 {
     if ((self = [super init])) {
-        name = _name;
-        age = _age;
-        gender = _gender;
-        classes = _classes;
-        salary = _salary;
-        areaOfExpertise = _areaOfExpertise;
+        self.name = name;
+        self.age = age;
+        self.gender = gender;
+        _classes = classes;
+        _salary = salary;
+        _areaOfExpertise = areaOfExpertise;
     }
     return self;
 }
 
 - (NSString *)description
 {
-    if(gender == Male) {
-        return [NSString stringWithFormat:@"%@. Jestem mężczyzną aktualnie nauczającym %@ " "za $%@ rocznie z doświadczeniem z zakresu %@", [super description], classes, salary, areaOfExpertise];
+    if(self.gender == Male) {
+        return [NSString stringWithFormat:@"%@. Jestem mężczyzną aktualnie nauczającym %@ " "za $%@ rocznie z doświadczeniem z zakresu %@", [super description], _classes, _salary, _areaOfExpertise];
     } else {
-        return [NSString stringWithFormat:@"%@. Jestem kobietą aktualnie nauczającą %@ " "za $%@ rocznie z doświadczeniem z zakresu %@", [super description], classes, salary, areaOfExpertise];
+        return [NSString stringWithFormat:@"%@. Jestem kobietą aktualnie nauczającą %@ " "za $%@ rocznie z doświadczeniem z zakresu %@", [super description], _classes, _salary, _areaOfExpertise];
     }
 }
 

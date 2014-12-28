@@ -6,20 +6,17 @@
 //  Copyright (c) 2014 Piotr Mlynarski. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 typedef enum {
     Male, Female
 } Gender;
 
-@interface Person : NSObject {
-    NSString *name;
-    NSNumber *age;
-    Gender gender;
-}
+@interface Person : NSObject
 
-@property NSString * name;
-@property NSNumber * age;
-@property Gender gender;
+@property(nonatomic) NSString * name;
+@property(nonatomic) NSNumber * age;
+@property(nonatomic) Gender gender;
 
 -(id)initWithName:(NSString *)_name
               age:(NSNumber *)_age

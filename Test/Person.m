@@ -11,105 +11,64 @@
 
 @implementation Person
 
-
 //czy zamiast poniższego mogę zastosować @synthesize ...
 - (id)init {
     if ((self = [super init])) {
-        name = @"Person";
-        age = [NSNumber numberWithInt:-1];
-        gender = Male;
+        _name = @"Person";
+        _age = [NSNumber numberWithInt:-1];
+        _gender = Male;
     }
     
     return self;
 }
 
-- (id)initWithName:(NSString *)_name {
+- (id)initWithName:(NSString *)name {
     if ((self = [super init])) {
-        name = _name;
-        age = [NSNumber numberWithInt:-1];
-        gender = Male;
+        _name = name;
+        _age = [NSNumber numberWithInt:-1];
+        _gender = Male;
     }
     
     return self;
 }
 
-- (id)initWithAge:(NSNumber *)_age {
+
+- (id)initWithAge:(NSNumber *)age {
     if ((self = [super init])) {
-        name = @"Person";
-        age = _age;
-        gender = Male;
+        _name = @"Person";
+        _age = age;
+        _gender = Male;
     }
     
     return self;
 }
 
-- (id)initWithGender:(Gender)_gender {
+- (id)initWithGender:(Gender)gender {
     if ((self = [super init])) {
-        name = @"Person";
-        age = [NSNumber numberWithInt:-1];
-        gender = _gender;
+        _name = @"Person";
+        _age = [NSNumber numberWithInt:-1];
+        _gender = gender;
     }
     
     return self;
 }
 
-- (id)initWithName:(NSString *)_name age:(NSNumber *)_age gender:(Gender)_gender {
+- (id)initWithName:(NSString *)name age:(NSNumber *)age gender:(Gender)gender {
     if ((self = [super init])) {
-        name = _name;
-        age = _age;
-        gender = _gender;
+        _name = name;
+        _age = age;
+        _gender = gender;
     }
     
     return self;
 }
 
-- (NSString *)name {
-    if (name) {
-        return name;
-    } else
-        
-        return @"--nieznane--";
-}
-
-- (NSNumber *)age {
-    if (age) {
-        return age;
-    } else
-        
-        return [NSNumber numberWithInt:-1];
-}
-
-- (Gender)gender {
-    if (gender) {
-        return gender;
-    }
-    
-    return -1;
-}
-
-- (void)setName:(NSString *)_name {
-    if (name) {
-        name = _name;
-    }
-}
-
-- (void)setAge:(NSNumber *)_age {
-    if (age) {
-        age = _age;
-    }
-}
-
-- (void)setGender:(Gender)_gender {
-    if (gender) {
-        gender = _gender;
-    }
-}
 
 - (NSString *)description {
-    if (gender==Male) {
-        return [NSString stringWithFormat:@"Cześć, jestem mężczyzną, mam na imię %@, a mój wiek to %@ lat", name, age];
+    if (_gender==Male) {
+        return [NSString stringWithFormat:@"Cześć, jestem mężczyzną, mam na imię %@, a mój wiek to %@ lat", _name, _age];
     } else {
-        return [NSString stringWithFormat:@"Cześć, jestem kobietą, mam na imię %@, a mój wiek to %@ lat", name, age];
+        return [NSString stringWithFormat:@"Cześć, jestem kobietą, mam na imię %@, a mój wiek to %@ lat", _name, _age];
     }
 }
 

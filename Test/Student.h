@@ -1,17 +1,19 @@
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "Person.h"
 
-@interface Student: Person {
-    NSArray *classes;
-    NSNumber *numberOfCredits;
-    NSString *major;
-}
+@interface Student: Person
 
-- (id)initWithName:(NSString *)_name
-               age:(NSNumber *)_age
-            gender:(Gender)_gender
-           classes:(NSArray *)_classes
-   numberOfCredits:(NSNumber *)_numberOfCredits
-             major:(NSString *)_major;
+@property NSArray *classes;
+@property NSNumber *numberOfCredits;
+@property NSString *major;
+
+
+- (id)initWithName:(NSString *)name
+               age:(NSNumber *)age
+            gender:(Gender)gender
+           classes:(NSArray *)classes
+   numberOfCredits:(NSNumber *)numberOfCredits
+             major:(NSString *)major;
 
 @end
